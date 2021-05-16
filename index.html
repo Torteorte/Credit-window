@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link  rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">    
+    <title>MangoCredit</title>
+  </head>
+
+  <body>
+    <div class="container">
+
+      <div class="sliders-field">
+        <div class="header">Оформи кредит за 10 минут!</div>
+        <div class="main">
+          <div>
+            <label for="money">Сумма кредита: <span id="money-content"></span> грн.</label> 
+            <div class="slider">
+              <button class="key money-left">-</button>
+              <input name="money" class="slider-setting" type="range" min="500" max="10000" step="100" value="2000">
+              <button class="key money-right">+</button>
+              <span class="little-inform">10000 грн.</span>
+            </div>
+            
+          </div>
+          <div>
+            <label for="days">Период кредита: <span id="days-content"></span> дней.</label> 
+            <div class="slider">
+              <button class="key day-left">-</button>
+              <input name="days" class="slider-setting" type="range" min="5" max="30" step="1" value="10">
+              <span class="little-inform">30 дней</span> 
+              <button class="key day-right">+</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="information-field">
+        <div class="header">Условия пользования кредитом</div>
+        <div class="information">
+          <ul>
+            <li>Сумма кредита <span id="credit-body"></span></li>
+            <li>Проценты за период <span id="percent-period"></span></li>
+            <li>Всего <span id="result">2400 грн.</span></li>
+            <li>Дата погашения <span id="date"></span></li>
+          </ul>
+        </div>
+        <div class=footer>
+          <button class="confirm-button">Оформить кредит</button>
+          <br>
+          <div class="checkbox-field">
+            <input type="checkbox" name="new-user" id="box">
+            <label for="new-user" id="label-check">Я новый клиент</label>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <script src="script.js"></script>
+  </body>
+
+</html>

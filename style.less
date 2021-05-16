@@ -1,0 +1,153 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: lightgray;
+}
+  
+.container {
+    min-height: 500px;
+    width: 550px;
+    margin: auto;
+    background-color: darkgrey;
+    transform: translateY(50px);
+    box-shadow: 0px 0px 15px 0px black;
+    border-radius: 10px;
+}
+
+.sliders-field {
+    background-color: rgb(206, 221, 226);
+    border-radius: 10px 10px 0 0;
+    color: rgb(24, 41, 41);
+    padding-bottom: 5px;
+
+    .header {
+        text-transform: uppercase;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .main div {
+        padding: 15px 10px;
+        font-size: 18px;
+    }
+
+    .slider {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        width: 70%;
+        margin: auto;
+    
+        .little-inform {
+            font-size: 14px;
+            position: absolute;
+            bottom: 0;
+            right: 70px;
+        } 
+    
+        button {
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            border: solid 2px darkgrey;
+            font-size: 22px;
+            cursor: pointer;
+            background-color: rgb(206, 221, 226);
+        }
+    }
+}
+
+.slider-setting {
+    -webkit-appearance: none;
+    display: block;
+    width: 70%;
+    height: 5px;
+    margin: 15px auto;
+    padding: 2px 0;
+    border-radius: 5px;
+    background-color: rgb(182, 182, 182);
+    box-shadow: inset 0 0 0 1px #b6aaff;
+}
+  
+.slider-setting::-moz-range-thumb {
+    box-sizing: border-box;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 8px solid green;
+}
+  
+.slider-setting::-moz-range-thumb:active {
+    background-color: green;
+}
+
+input[name="days"]::-moz-range-thumb {
+    border: 8px solid rgb(32, 90, 178); 
+}
+
+input[name="days"]::-moz-range-thumb:active {
+    background-color: rgb(32, 90, 178);
+}
+
+.information-field {
+    background-color: rgb(32, 90, 178);
+    border-radius: 0 0 10px 10px;
+    padding-bottom: 10px;
+    color: white;
+
+    ul {
+        list-style: none;
+        margin-bottom: 30px;
+        
+        li {
+            padding: 5px;
+            margin: 5px;
+        }
+        span {
+            float: right;
+            margin-right: 25px;
+        }
+    }
+        
+    .confirm-button {
+        display: block;
+        height: 50px;
+        width: 250px;
+        margin: 0px auto;
+        border: none;
+        border-radius: 20px;
+        font-size: 22px;
+        background-color: rgb(255, 166, 0);
+        color: white;
+        cursor: pointer;
+        transition-duration: 100ms;
+    }
+
+    .confirm-button:hover {
+        background-color: rgb(255, 123, 0);  
+    }
+
+    .confirm-button:active {
+        background-color: rgb(255, 81, 0);
+    }
+
+    input[type="checkbox"] {
+        margin: 10px;
+        margin-left: 20px
+
+    }
+
+    .checkbox-field,
+    #label-check {
+        cursor: pointer;
+        width: 35%;
+    }
+    
+}
+
+.header {
+    font-size: 22px;
+    border-bottom: solid 1px darkgray;
+    padding: 10px;
+}
